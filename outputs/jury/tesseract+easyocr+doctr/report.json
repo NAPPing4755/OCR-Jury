@@ -1,0 +1,133 @@
+{
+  "engines": [
+    "tesseract",
+    "easyocr",
+    "doctr"
+  ],
+  "dev_baselines": {
+    "single:tesseract": 0.07978752532720004,
+    "single:easyocr": 0.08326488144132303,
+    "single:doctr": 0.09276600405235201,
+    "single+repair:tesseract": 0.0639614478944198,
+    "single+repair:easyocr": 0.07302447839658288,
+    "single+repair:doctr": 0.07510541591369585,
+    "majority_vote": 0.07899348337988062,
+    "rover": 0.07129949071792345,
+    "rover+repair": 0.05498055966266908,
+    "oracle:engines_only": 0.04832703575926839,
+    "oracle:all_candidates": 0.027791468156179836
+  },
+  "dev_best_single": "tesseract",
+  "test_baselines": {
+    "single:tesseract": 0.06399915279665355,
+    "single:easyocr": 0.08445558359955521,
+    "single:doctr": 0.08412023227491748,
+    "single+repair:tesseract": 0.04564308029016714,
+    "single+repair:easyocr": 0.07259473674921016,
+    "single+repair:doctr": 0.06387560230862913,
+    "majority_vote": 0.06348730077483807,
+    "rover": 0.06294014861358703,
+    "rover+repair": 0.04357802213318743,
+    "oracle:engines_only": 0.04608433203311153,
+    "oracle:all_candidates": 0.02359814321266569
+  },
+  "test_best_single": "tesseract",
+  "dev_jury": {
+    "full": 0.03989376266360002,
+    "no_memory": 0.03901757844586824,
+    "no_repair": 0.0466841903510213,
+    "no_lm": 0.04170089261267181,
+    "no_rover": 0.04066042385411533
+  },
+  "dev_confidence": {
+    "jury_ece": 0.05397857004698519,
+    "tesseract_self_confidence_ece": 0.6554468954065912,
+    "coverage_curve": [
+      {
+        "auto_accepted": 1.0,
+        "human_review": 0.0,
+        "accepted_cer": 0.03989376266360002
+      },
+      {
+        "auto_accepted": 0.9,
+        "human_review": 0.1,
+        "accepted_cer": 0.03179147205062528
+      },
+      {
+        "auto_accepted": 0.8,
+        "human_review": 0.2,
+        "accepted_cer": 0.02877673571283989
+      },
+      {
+        "auto_accepted": 0.7,
+        "human_review": 0.3,
+        "accepted_cer": 0.026404023470243086
+      },
+      {
+        "auto_accepted": 0.6,
+        "human_review": 0.4,
+        "accepted_cer": 0.023380418899171942
+      },
+      {
+        "auto_accepted": 0.5,
+        "human_review": 0.5,
+        "accepted_cer": 0.021272190880389213
+      }
+    ],
+    "chosen_source_counts": {
+      "engine": 229,
+      "repair": 344,
+      "rover": 83,
+      "memory": 15
+    }
+  },
+  "test_jury": {
+    "full": 0.03244082814127116,
+    "no_memory": 0.03196427625889122,
+    "no_repair": 0.03729459731365939,
+    "no_lm": 0.033994034276435395,
+    "no_rover": 0.03134652381876908
+  },
+  "test_confidence": {
+    "jury_ece": 0.06275935184978122,
+    "tesseract_self_confidence_ece": 0.5882869225077239,
+    "coverage_curve": [
+      {
+        "auto_accepted": 1.0,
+        "human_review": 0.0,
+        "accepted_cer": 0.03244082814127116
+      },
+      {
+        "auto_accepted": 0.9,
+        "human_review": 0.1,
+        "accepted_cer": 0.024325172630257377
+      },
+      {
+        "auto_accepted": 0.8,
+        "human_review": 0.2,
+        "accepted_cer": 0.02051259526058024
+      },
+      {
+        "auto_accepted": 0.7,
+        "human_review": 0.3,
+        "accepted_cer": 0.014822975612198908
+      },
+      {
+        "auto_accepted": 0.6,
+        "human_review": 0.4,
+        "accepted_cer": 0.012905911740216486
+      },
+      {
+        "auto_accepted": 0.5,
+        "human_review": 0.5,
+        "accepted_cer": 0.009554923244458495
+      }
+    ],
+    "chosen_source_counts": {
+      "engine": 391,
+      "repair": 580,
+      "rover": 58,
+      "memory": 27
+    }
+  }
+}

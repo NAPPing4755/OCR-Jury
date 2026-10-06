@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+
+# datasets and generated caches stay local
+data/raw/
+data/lines/
+cache/
+
+*_log.txt
